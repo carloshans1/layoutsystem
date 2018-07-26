@@ -1,0 +1,72 @@
+body { margin: 0px; }
+header {
+  height: 45px;
+  background-color: #ffffff;
+  text-align:center;
+}
+main {
+  background-color:	#ffffff;
+  /*overflow-y: scroll;*/
+  min-height: calc(100vh - 160px);
+  /*height: calc(100vh - 100px);*/      
+}
+
+#quadroSettings {
+  border:4px solid grey;
+  border-radius:15px;
+  box-shadow: 5px 5px 5px grey;
+  float:left;
+  /*min-height: calc(100vh - 140px);*/
+  height: calc(100vh - 140px);
+  padding: 20px;
+  margin:10px;
+  width: 30%;/*300px;*/
+  overflow-y: scroll;
+}
+
+#quadroSimples {
+  border:4px solid grey;
+  border-radius:15px;
+  box-shadow: 5px 5px 5px grey;
+  float:left;
+  /*min-height: calc(100vh - 140px);*/
+  height: calc(100vh - 140px);
+  padding: 20px;
+  margin:10px;  
+  background-color: #f0ae9d60;
+  width: 70%;
+}
+
+foot div{
+  /*height: 30px;*/
+  height: 100%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+
+h4 {
+  text-align: center;
+}
+
+input.padrao {
+  background-color: rgba(245, 216, 173, 0.178);
+  text-align: left;
+  width: 100%;
+}
+input.corbox {
+  /*display: inline;*/
+  float: right;
+}
+input.rodape {
+  width: 60px;
+
+}
+
+.textoGFAjuste {
+  position: absolute;
+  top: 80;
+}

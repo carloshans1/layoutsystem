@@ -1,0 +1,245 @@
+<!--
+    Created using JS Bin - http://jsbin.com
+    Copyright (c) 2018 by Carlos de Oliveira
+    Released under the MIT license: http://jsbin.mit-license.org
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Titulo a definir</title>
+  <!-- BOOTSTRAP versão 4.1.2 CSS compilada e minificada -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <!-- BOOTSTRAP versão 4.1.2 JavaScript compilada e minificada -->
+  <script src="dist/jquery/jquery-3.3.1.min.js"></script>
+  <script src="dist/popper/popper.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>  
+</head>
+
+<body>
+  <header>
+    <h2>System Layout DITEC - SLD</h2>
+  </header>
+  <main class="flex">
+    <section id="quadroSettings">
+      <div class="container">
+        <h4>Titulo ....</h4>
+
+        <div id="accordion">      
+          <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseOne">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                Banner
+              </a>              
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                <form>                  
+                  <input type="radio" name="opcaoAjuste" id="campo11" />
+                  <label for="campo11">campo 1:</label>
+                  <input type=color id="color11" class="corbox" onchange="cortextobox('11');">                  
+                  <input type="text" id="myInput11" class="padrao" value="" oninput="escrever(11);">
+                  <input type="radio" name="opcaoAjuste" id="campo12" />
+                  <label for="campo12">campo 2</label>
+                  <input type=color id="color12" class="corbox" onchange="cortextobox('12');">
+                  <input type="text" id="myInput12" class="padrao" value="" oninput="escrever(12);">
+                  <input type="radio" name="opcaoAjuste" id="campo13" />
+                  <label for="campo13">campo 3</label>
+                  <input type=color id="color13" class="corbox" onchange="cortextobox('13');">
+                  <input type="text" id="myInput13" class="padrao" value="" oninput="escrever(13);">
+                  <input type="radio" name="opcaoAjuste" id="campo14" />
+                  <label for="campo14">campo 4</label>
+                  <input type=color id="color14" class="corbox" onchange="cortextobox('14');">
+                  <input type="text" id="myInput14" class="padrao" value="" oninput="escrever(14);">
+                  <input type="radio" name="opcaoAjuste" id="campo15" />
+                  <label for="campo15">campo 5</label>
+                  <input type=color id="color15" class="corbox" onchange="cortextobox('15');">
+                  <input type="text" id="myInput15" class="padrao" value="" oninput="escrever(15);">
+                </form>                
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseTwo">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                Faixa
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                  <form>
+                    <label for="campo21">campo 1:</label>
+                    <input type=color id="color21" class="corbox" onchange="cortextobox('21');">
+                    <input type="text" id="myInput21" class="padrao" value="" oninput="escrever('21');">
+                    <label for="campo22">campo 2</label>
+                    <input type=color id="color22" class="corbox" onchange="cortextobox('22');">
+                    <input type="text" id="myInput22" class="padrao" value="" oninput="escrever('22');">
+                    <label for="campo23">campo 3</label>
+                    <input type=color id="color23" class="corbox" onchange="cortextobox('23');">
+                    <input type="text" id="myInput23" class="padrao" value="" oninput="escrever('23');">
+                    <label for="campo24">campo 4</label>
+                    <input type=color id="color24" class="corbox" onchange="cortextobox('24');">
+                    <input type="text" id="myInput24" class="padrao" value="" oninput="escrever('24');">
+                    <label for="campo25">campo 5</label>
+                    <input type=color id="color25" class="corbox" onchange="cortextobox('25');">
+                    <input type="text" id="myInput25" class="padrao" value="" oninput="escrever('25');">
+                  </form>                
+                </div>
+              </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header" data-toggle="collapse" href="#collapseThree">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Campanha
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                  <form>
+                    <label for="campo31">campo 1:</label>
+                    <input type=color id="color31" class="corbox" onchange="cortextobox('31');">
+                    <input type="text" id="myInput31" class="padrao" value="" oninput="escrever('31');">
+                    <label for="campo32">campo 2</label>
+                    <input type=color id="color32" class="corbox" onchange="cortextobox('32');">
+                    <input type="text" id="myInput32" class="padrao" value="" oninput="escrever('32');">
+                    <label for="campo33">campo 3</label>
+                    <input type=color id="color33" class="corbox" onchange="cortextobox('33');">
+                    <input type="text" id="myInput33" class="padrao" value="" oninput="escrever('33');">
+                    <label for="campo34">campo 4</label>
+                    <input type=color id="color34" class="corbox" onchange="cortextobox('34');">
+                    <input type="text" id="myInput34" class="padrao" value="" oninput="escrever('34');">
+                    <label for="campo35">campo 5</label>
+                    <input type=color id="color35" class="corbox" onchange="cortextobox('35');">
+                    <input type="text" id="myInput35" class="padrao" value="" oninput="escrever('35');">
+                  </form>                
+                </div>
+              </div>
+          </div>            
+        </div>      
+      </div>  
+    </section>
+    <section id="quadroSimples">
+      <div id="textoGraf11" class="textoGFAjuste"></div> 
+      <div id="textoGraf12" class="textoGFAjuste"></div> 
+      <div id="textoGraf13" class="textoGFAjuste"></div> 
+      <div id="textoGraf14" class="textoGFAjuste"></div> 
+      <div id="textoGraf15" class="textoGFAjuste"></div> 
+      <div id="textoGraf21" class="textoGFAjuste"></div> 
+      <div id="textoGraf22" class="textoGFAjuste"></div> 
+      <div id="textoGraf23" class="textoGFAjuste"></div> 
+      <div id="textoGraf24" class="textoGFAjuste"></div> 
+      <div id="textoGraf25" class="textoGFAjuste"></div> 
+      <div id="textoGraf31" class="textoGFAjuste"></div> 
+      <div id="textoGraf32" class="textoGFAjuste"></div> 
+      <div id="textoGraf33" class="textoGFAjuste"></div> 
+      <div id="textoGraf34" class="textoGFAjuste"></div> 
+      <div id="textoGraf35" class="textoGFAjuste"></div> 
+    </section>
+  </main>
+  
+  <foot>
+    <div>
+      <button id="btnUP" onclick="ajusteCampo('up');">UP</button>
+      <button id="btnDOWN" onclick="ajusteCampo('down');">DOWN</button>
+      <button id="btnLEFT" onclick="ajusteCampo('left');">LEFT</button>
+      <button id="btnRIGHT" onclick="ajusteCampo('right');">RIGHT</button>
+      <input type="number" id="NumberSleep" class="rodape" value="1">
+    </div>  
+  </foot>
+  
+  <script>
+
+    function escrever(xValor) {
+      var xCor= "myInput".concat(xValor);
+      var xTexto = "textoGraf".concat(xValor);
+      var object = document.getElementById(xCor).value;
+      document.getElementById(xTexto).innerHTML = object;
+    }
+
+    function cortextobox(xValor) {
+      var xCor= "#color".concat(xValor);
+      var xTexto = "textoGraf".concat(xValor);
+      var color = document.querySelector(xCor).value;
+      document.getElementById(xTexto).style.color = color;
+    }
+
+    function ajusteCampo(xDirecao) {            
+      var xCampo = "";
+      var object = document.getElementById("NumberSleep").value;
+      if (document.getElementById("campo11").checked) {  xCampo = "textoGraf11"; } else
+      if (document.getElementById("campo12").checked) {  xCampo = "textoGraf12"; } else
+      if (document.getElementById("campo13").checked) {  xCampo = "textoGraf13"; } else
+      if (document.getElementById("campo14").checked) {  xCampo = "textoGraf14"; } else
+      if (document.getElementById("campo15").checked) {  xCampo = "textoGraf15"; } else
+      if (document.getElementById("campo21").checked) {  xCampo = "textoGraf21"; } else
+      if (document.getElementById("campo22").checked) {  xCampo = "textoGraf22"; } else
+      if (document.getElementById("campo23").checked) {  xCampo = "textoGraf23"; } else
+      if (document.getElementById("campo24").checked) {  xCampo = "textoGraf24"; } else
+      if (document.getElementById("campo25").checked) {  xCampo = "textoGraf25"; } else
+      if (document.getElementById("campo31").checked) {  xCampo = "textoGraf31"; } else
+      if (document.getElementById("campo32").checked) {  xCampo = "textoGraf32"; } else
+      if (document.getElementById("campo33").checked) {  xCampo = "textoGraf33"; } else
+      if (document.getElementById("campo34").checked) {  xCampo = "textoGraf34"; } else
+      if (document.getElementById("campo35").checked) {  xCampo = "textoGraf35"; } else {
+        var xCampo = "Erro";
+      }
+      if (xCampo) {
+        var el = document.getElementById(xCampo), pos = el.getBoundingClientRect();
+        var xCoordTop = pos.top; var xCoordLeft = pos.left; var xCoordRight = pos.right;        
+        
+        var xUp = parseInt(xCoordTop);
+        var xDown = parseInt(xCoordTop);
+        var xLeft = parseInt(xCoordLeft);
+        var xRight = parseInt(xCoordLeft);
+
+        if (xDirecao == "up") { var xUp = parseInt(xCoordTop) - parseInt(object);}
+        if (xDirecao == "down") { var xDown = parseInt(xCoordTop) + parseInt(object);}
+        if (xDirecao == "left") { var xLeft = parseInt(xCoordLeft) - parseInt(object);}
+        if (xDirecao == "right") { var xRight = parseInt(xCoordLeft) + parseInt(object);}                                 
+         
+        /*if ((xCoordTop > 64 && xCoordTop < 534) && (xCoordLeft > 446 && xCoordRight < 1330)) {*/
+        if ((xUp > 64 && xDown < 534) && (xLeft > 446 && xRight < 1330)) {
+          if (xDirecao == "up") {
+            var xValor = parseInt(xCoordTop) - parseInt(object);
+            document.getElementById(xCampo).style.top  = xValor + 'px';
+          } else if (xDirecao == "down") {
+            var xValor = parseInt(xCoordTop) + parseInt(object);
+            document.getElementById(xCampo).style.top  = xValor + 'px';       
+          } else if (xDirecao == "left") {
+            var xValor = parseInt(xCoordLeft) - parseInt(object);
+            document.getElementById(xCampo).style.left  = xValor + 'px';       
+          } else if (xDirecao == "right") {
+            var xValor = parseInt(xCoordLeft) + parseInt(object);
+            document.getElementById(xCampo).style.left  = xValor + 'px';       
+          } else {
+            alert("Falha no sistema");  
+          }          
+        } else {
+          if (xUp < 65) {
+            alert("Posição fora das medidas permitidas.");
+            var xU = 65;
+            document.getElementById(xCampo).style.top  = xU + 'px';
+          } else if (xDown > 533) {
+            alert("Posição fora das medidas permitidas.");
+            var xD = 533;
+            document.getElementById(xCampo).style.top  = xD + 'px';       
+          } else if (xLeft < 447) {
+            alert("Posição fora das medidas permitidas.");
+            var xL = 447;
+            document.getElementById(xCampo).style.left  = xL + 'px';       
+          } else if (xRight > 1329) {
+            alert("Posição fora das medidas permitidas.");
+            var xR = 1329;
+            document.getElementById(xCampo).style.left  = xR + 'px';       
+          } 
+        }
+      }
+    }
+
+  </script>
+</body>
+</html>
